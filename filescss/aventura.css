@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  margin-left: 12%;
+  background-image: url(../imgs/aventura/fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Treasure Map Deadhand', serif;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgb(106, 104, 93);
+}
+
+.galeria {
+  max-width: 80%;
+}
+.logo-area{
+  color: rgb(247, 187, 7);
+  text-shadow: #fff 0 0 10px;
+}
+.menu a {
+  color: rgb(247, 187, 7);
+  text-shadow: #fff 0 0 10px;
+}
+.menu a::after{
+  background-color: rgb(116, 171, 61);
+  text-shadow: #fff 0 0 10px;
+}
+.menu a:hover{
+  color: rgb(116, 171, 61);
+  text-shadow: #fff 0 0 10px;
+}
+
+.mapa {
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  margin: 40px auto;
+  background: url('../imgs/aventura/mapa.webp') no-repeat center/cover;
+  border: 3px solid #ffcc00;
+  border-radius: 15px;
+}
+
+.map-area {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+  background: rgba(255, 204, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.map-area:hover {
+  background: rgba(255, 204, 0, 0.6);
+}
+
+.modal-toggle {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  padding: 1%;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  width: 97%;
+  height: 97%;
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffcc00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  border-radius: 15px;
+}
+
+.modal-toggle:checked+.map-area+.modal {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.close {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  background: #ffcc00;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.footer-aventura {
+  background: linear-gradient(180deg, #1b3a28, #0e1e13);
+  color: #e0d7b9;
+  padding: 40px 0;
+  border-top: 4px solid #c9a94a;
+}
+
+.footer-aventura .footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-aventura h2,
+.footer-aventura h3 {
+  color: #f3d27b;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.footer-aventura a {
+  color: #e0d7b9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-aventura a:hover {
+  color: #f3d27b;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid #c9a94a;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d1cba2;
+}

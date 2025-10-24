@@ -1,0 +1,178 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  margin-left: 10%;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 5% 0;
+  height: 60vh;
+  background: linear-gradient(to bottom right, #0b0b4f, #111);
+}
+
+.inicio h1 {
+  font-size: 3em;
+  color: #00aaff;
+}
+
+.inicio span {
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #1a1aff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00aaff;
+}
+
+/* JOGOS */
+.jogos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  background-color: #0f0f0f;
+}
+
+.jogo-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.jogo-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.jogo-card:hover {
+  transform: scale(1.05);
+}
+
+/* FORMULÁRIO */
+.formulario {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #111;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #888;
+  border-top: 2px solid #1a1aff;
+}
+
+.footer-ps2 {
+  background: linear-gradient(to top, #000010, #0a0a2a);
+  color: #d0d0ff;
+  padding-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid #1a1aff;
+  box-shadow: 0 -2px 15px rgba(26, 26, 255, 0.3);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-logo h2 {
+  color: #00aaff;
+  text-shadow: 0 0 8px #0077ff;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-style: italic;
+  color: #ccc;
+}
+
+
+.footer-links h3,
+.footer-social h3 {
+  color: #1a8cff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #d0d0ff;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #00aaff;
+  text-shadow: 0 0 8px #00aaff;
+}
+
+
+.footer-copy {
+  background-color: #000;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #1a1aff;
+  font-size: 0.9em;
+  color: #888;
+}

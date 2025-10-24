@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página web não disponível</title>
+  <link rel="icon" href="imgs/icones/ps2logo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: radial-gradient(circle at top, #0a0a2a 0%, #000010 100%);
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 40px;
+      border: 2px solid #1a1aff;
+      border-radius: 12px;
+      background: rgba(15, 15, 40, 0.6);
+      box-shadow: 0 0 20px rgba(0, 100, 255, 0.4);
+      max-width: 500px;
+    }
+
+    .container img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 0 8px #0077ff);
+    }
+
+    h1 {
+      font-size: 1.8em;
+      color: #00aaff;
+      text-shadow: 0 0 8px #0077ff;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .retry-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #1a1aff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .retry-btn:hover {
+      background-color: #00aaff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.8em;
+      color: #888;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .container {
+        padding: 25px;
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../imgs/icones/ps2logo.png" alt="PS2 Logo">
+    <h1>Página web não disponível</h1>
+    <p>
+      Devido a processos legais, Página web não disponível.
+    </p>
+  </div>
+
+  <footer>© 2025 GustaGames — Todos os direitos reservados.</footer>
+</body>
+</html>
